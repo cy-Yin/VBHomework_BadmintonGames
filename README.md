@@ -8,38 +8,21 @@
 
 本项目共分为两个功能，第一是面对参赛选手的报名功能，第二是面向赛事承办与组织方的管理功能。具体将在后续进行进一步阐述。
 
- 
-
-|      |                                                              |
-| ---- | ------------------------------------------------------------ |
-|      | ![img](file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png) |
-
-
 首先运行项目时，会出现Welcome窗体。
 
 
 
 点击“开始”菜单的“赛事介绍”，出现Introduction窗体，阅读有关赛事的信息，按“返回”按钮，返回初始窗体。
 
-![img](file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png)
-
 点击“登录/注册”按钮，出现InputBox，会询问您的身份，选择非赛事组织方的，进入选手的登录、报名功能；选择赛事组织方的，进入管理员登陆界面。
 
-(一) 参赛选手身份
+### (一) 参赛选手身份
 
 出现SignInForST窗体，要求输入姓名、学工号、密码进行登录。
-
-![img](file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png)
 
 输入的相关信息分别和Welcome窗体的Names、number、Passwords数组分别进行比对，若系统中出现相匹配的信息，弹出“登录成功”，否则提示需要进行注册。
 
 点击“注册”按钮，进入RegisterForST窗体。
-
- 
-
-|      |                                                              |
-| ---- | ------------------------------------------------------------ |
-|      | ![img](file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png) |
 
 
 点击“返回”，返回主页面。
@@ -56,12 +39,6 @@
 
 右上角显示个人信息。
 
- 
-
-|      |                                                              |
-| ---- | ------------------------------------------------------------ |
-|      | ![img](file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png) |
-
 
 此时点击“报名”按钮，出现EnterForGame（报名）窗体。
 
@@ -73,11 +50,9 @@
 
    按“退出”按钮，退出整个程序。
 
-(二) 赛事组织方身份
+### (二) 赛事组织方身份
 
 若是在最开始的点击“登录/注册”按钮，出现InputBox时选择赛事组织方，则出现SignInForOrganizer窗体。
-
-![img](file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image012.png)
 
 只有输入正确的用户名和密码（用户名Admin，密码12345678）时，点击“登录”按钮，才会继续程序的下一个部分。
 
@@ -85,17 +60,11 @@
 
 登录成功后的下一个窗体为Timeset（设定比赛时间）。
 
-![img](file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image014.png)
-
 默认的比赛年份为2022年，若设定时间早于程序运行时的日期，则弹出错误提示，重新进行设置。点击“确定”按钮，计算并显示程序运行当天距离设定的比赛日期还有多少天。
 
 点击“重置”按钮，初始化当前界面，全部重新设置。
 
 点击人员录入，进入STinformation窗体。
-
-![img](file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image016.png)
-
-![img](file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image018.png)
 
 选择“学生”，则出现上方第一张图片的内容。
 
@@ -123,8 +92,6 @@ Public TeacherAgesATgame() As Integer = {43, 36, 54, 61, 35, 67, 64, 36, 45, 41,
 
 全部人员录入完毕后，点击“确定”按钮，进入Arrangement窗体。
 
-![img](file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image020.png)
-
 窗体出现时会显示学生组和教职工组的相关信息（其中如果教职工组在前一个窗体中没有排序，则先进行排序）。
 
 点击“抽签规则”可以了解阅读抽签规则。
@@ -134,8 +101,6 @@ Public TeacherAgesATgame() As Integer = {43, 36, 54, 61, 35, 67, 64, 36, 45, 41,
 展开窗体后，点击“自动抽签”按钮，进行人员分配。其中学生组随机分配，教职工组年龄最大的与年龄最小的一组，年龄次大的与年龄次小的一组，以此类推。
 
 点击“查看”按钮，进入Check窗体。
-
-![img](file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image022.png)
 
 分别选择“上午”“下午”（可多选）与比赛场地“一号场地”“二号场地”“三号场地”“四号场地”，查看人员情况。
 
